@@ -27,6 +27,12 @@ class NoteControllers{
         res.send(note)
     }
 
+    static update=async(req,res)=>{
+        const {_id}=req.body
+        const id=_id
+        const note=await NoteModel.findOneAndUpdate({_id:id},req.body)
+    }
+
  
 }
 

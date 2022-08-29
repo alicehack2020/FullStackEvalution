@@ -7,6 +7,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import ProtectedRoutes from './protected/ProtectedRoutes';
 import AddPage from './pages/AddPage';
+import UpdatePage from './pages/UpdatePage';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/login" element={<Login/>}/>
           <Route path="/register" element={<Register/>}/>
           <Route path="/addpage" element={<AddPage/>}/>
+          <Route path="/updatepage" element={<UpdatePage/>}/>
        </Routes>
     </div>
   );
