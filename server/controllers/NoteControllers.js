@@ -28,9 +28,9 @@ class NoteControllers{
     }
 
     static update=async(req,res)=>{
-        const {_id}=req.body
-        const id=_id
-        const note=await NoteModel.findOneAndUpdate({_id:id},req.body)
+        const {taskname}=req.body
+        
+        const note=await NoteModel.findOneAndUpdate({"taskname":taskname},req.body)
     }
 
  

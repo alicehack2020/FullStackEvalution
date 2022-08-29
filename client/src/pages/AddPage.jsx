@@ -11,8 +11,8 @@ const AddPage = () => {
     const submit=()=>{
         let noteData={
             "taskname":taskname,
-            "status":"done"+status,
-            "tag":"personal"+tag
+            "status": status,
+            "tag":tag
         } 
 
 fetch('http://localhost:3000/addNotes', {
@@ -50,8 +50,8 @@ function handleChangeTag(event){
         <input type="text" name="" id="" value={taskname} onChange={(e)=>setTaskname(e.target.value)} placeholder="Enter Your Notes"/>
         
         <select name='option' onChange={handleChangeStatus}>
-          <option value="pending">pending</option>
           <option value="done">done</option>
+          <option value="pending">pending</option>
         </select>
 
         

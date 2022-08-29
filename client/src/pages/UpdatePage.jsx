@@ -15,7 +15,7 @@ const UpdatePage = () => {
             "tag":tag
         } 
 
-fetch('http://localhost:3000/addNotes', {
+fetch('http://localhost:3000/noteUpdate', {
     method: 'PATCH', 
     headers: {
       'Content-Type': 'application/json',
